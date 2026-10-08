@@ -1,0 +1,5 @@
+# Optional - real PDF output for the pdf-export server.
+# WeasyPrint needs native libraries (macOS: brew install pango).
+# Without them the server saves an HTML file instead.
+weasyprint>=62
+markdown>=3.5

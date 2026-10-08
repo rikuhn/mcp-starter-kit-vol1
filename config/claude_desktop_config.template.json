@@ -1,0 +1,33 @@
+{
+  "mcpServers": {
+    "file-manager": {
+      "command": "/PATH/TO/mcp-starter-kit-vol1/.venv/bin/python",
+      "args": ["/PATH/TO/mcp-starter-kit-vol1/servers/file_manager_mcp.py"],
+      "env": { "FILE_MANAGER_ROOT": "/Users/YOUR_NAME/Documents" }
+    },
+    "web-scraper": {
+      "command": "/PATH/TO/mcp-starter-kit-vol1/.venv/bin/python",
+      "args": ["/PATH/TO/mcp-starter-kit-vol1/servers/web_scraper_mcp.py"],
+      "env": {}
+    },
+    "sqlite": {
+      "command": "/PATH/TO/mcp-starter-kit-vol1/.venv/bin/python",
+      "args": ["/PATH/TO/mcp-starter-kit-vol1/servers/sqlite_mcp.py"],
+      "env": {
+        "SQLITE_DB_PATH": "/Users/YOUR_NAME/data/mydb.db",
+        "SQLITE_READ_ONLY": "true",
+        "SQLITE_MAX_ROWS": "500"
+      }
+    },
+    "pdf-export": {
+      "command": "/PATH/TO/mcp-starter-kit-vol1/.venv/bin/python",
+      "args": ["/PATH/TO/mcp-starter-kit-vol1/servers/pdf_export_mcp.py"],
+      "env": { "PDF_OUTPUT_DIR": "/Users/YOUR_NAME/Desktop" }
+    },
+    "notes": {
+      "command": "/PATH/TO/mcp-starter-kit-vol1/.venv/bin/python",
+      "args": ["/PATH/TO/mcp-starter-kit-vol1/servers/notes_mcp.py"],
+      "env": { "NOTES_FILE": "/Users/YOUR_NAME/.mcp_notes.json" }
+    }
+  }
+}
